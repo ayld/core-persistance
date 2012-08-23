@@ -11,6 +11,8 @@ public interface Dao<E extends Entity<I>, I extends Serializable> extends Serial
 	
 	public E createOrUpdate(E entity);
 	
+	public E merge(E entity);
+	
 	public E read(I id);
 	
 	public E find(I id);
